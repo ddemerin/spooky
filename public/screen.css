@@ -14,6 +14,11 @@ body {
   background-color: rgb(51, 51, 51);
 }
 
+main {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
 header {
   margin-top: 3rem;
 }
@@ -21,11 +26,6 @@ header {
 .portfolio {
   margin-top: 1rem;
   font-size: 1.5rem;
-}
-
-main {
-  display: grid;
-  grid-template-columns: 100%;
 }
 
 span {
@@ -181,26 +181,52 @@ button {
 
 @media (min-width: 1025px) {
   .top {
-    max-width: initial;
+  
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 16.8% 16.8% 16.8% 16.8% 16.8% 16.8%;
+    grid-template-rows: 25% 25% 25% 25%;
   }
 
   .first {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-
-  .first img {
-    height: 58vw;
-    width: 48vw;
+    grid-column-start: 1;
+    grid-column-end: 4;
   }
 
   .second {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-column-start: 4;
+    grid-column-end: 7;
   }
 
-  .first img {
-    height: 58vw;
-    width: 48vw;
+  .third {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
+
+  .fourth {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  .fifth {
+    grid-column-start: 5
+    grid-column-end: 7;
+  }
+  
+  .sixth {
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+
+  .seventh {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .eighth {
+    grid-column-start: 4;
+    grid-column-end: 7;
+  }  
 }
