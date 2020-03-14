@@ -14,6 +14,15 @@ body {
   background-color: rgb(51, 51, 51);
 }
 
+header {
+  margin-top: 3rem;
+}
+
+.portfolio {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
 main {
   display: grid;
   grid-template-columns: 100%;
@@ -23,29 +32,33 @@ span {
   color: rgb(251, 91, 96);
 }
 
-ul {
+.links {
   font-size: 1rem;
   list-style: none;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 3rem 0 3rem 0;
+  margin: 0;
 }
 
 li {
-  padding: .5rem;
+  padding: 0.5rem;
+  list-style: none;
 }
 
 .top {
   font-size: 1.3rem;
   padding: 0 0 0 1rem;
+  display: flex;
 }
 
-h3 {
-  margin-top: 1rem;
+.head-nav {
+  display: none;
 }
 
-.about, nav {
+.about,
+nav {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -58,13 +71,13 @@ h3 {
 }
 
 .about h1 {
-  padding: 0 .5rem 0 .5rem;
+  padding: 0 0.5rem 0 0.5rem;
 }
 
 nav a {
   text-decoration: none;
   color: rgb(143, 143, 143);
-  padding: 0 .5rem 0 .5rem;
+  padding: 0 0.5rem 0 0.5rem;
 }
 
 .card img {
@@ -75,7 +88,7 @@ nav a {
 .card {
   display: flex;
   justify-content: center;
-  margin: 1rem .5rem 1rem .5rem;
+  margin: 1rem 0.5rem 1rem 0.5rem;
 }
 
 footer {
@@ -98,25 +111,89 @@ button {
 @media (min-width: 767px) and (max-width: 1024px) {
   main {
     display: grid;
-    flex-direction: column;
-    flex-wrap: wrap;
     grid-template-columns: 50% 50%;
   }
-  .card img {
-    height: 55vw;
-    width: 47vw;
+
+  header {
+    margin-top: 2rem;
   }
-  .left {
-    margin-right: 1.5em;
-    margin-left: 0;
+
+  .top {
+    justify-content: center;
   }
-  .right {
-    margin-left: 1.5rem;
-    margin-right: 0;
+
+  .head-nav {
+    display: flex;
+    margin: 0;
   }
+
+  .head-nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0.75rem 0 0 0;
+  }
+
+  .head-nav li {
+    margin: 0;
+    list-style: none;
+  }
+
+  .head-nav button {
+    margin: 0;
+  }
+
+  .head-nav a {
+    color: rgb(94, 204, 255);
+    font-size: 1.15rem;
+  }
+
+  h1.portfolio {
+    width: 200px;
+  }
+
   .about h1 {
-    margin: 0 8rem 0 8rem;
+    font-size: 4rem;
+    line-height: 4.75rem;
+    margin: 0 6rem 0 6rem;
+  }
+
+  .first {
+    margin: 0;
+    padding: 0;
+  }
+
+  .card img {
+    height: 58vw;
+    width: 48vw;
+  }
+
+  .left {
+    padding-right: 1rem;
+  }
+
+  .right {
+    padding-left: 1rem;
   }
 }
 
-@media (min-width: 1025px) {}
+@media (min-width: 1025px) {
+  .first {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .first img {
+    height: 58vw;
+    width: 48vw;
+  }
+
+  .second {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+
+  .first img {
+    height: 58vw;
+    width: 48vw;
+  }
+}
