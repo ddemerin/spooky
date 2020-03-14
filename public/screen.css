@@ -108,7 +108,7 @@ button {
   border-color: black;
 }
 
-@media (min-width: 767px) and (max-width: 1024px) {
+@media (min-width: 767px) {
   main {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -120,6 +120,7 @@ button {
 
   .top {
     justify-content: center;
+    max-width: 1000rem;
   }
 
   .head-nav {
@@ -139,7 +140,7 @@ button {
   }
 
   .head-nav button {
-    margin: 0;
+    margin: 0 0 0 3.5rem;
   }
 
   .head-nav a {
@@ -148,7 +149,9 @@ button {
   }
 
   h1.portfolio {
-    width: 200px;
+    width: 150px;
+    font-size: 1.75rem;
+    margin-right: 1.5rem;
   }
 
   .about h1 {
@@ -177,6 +180,10 @@ button {
 }
 
 @media (min-width: 1025px) {
+  .top {
+    max-width: initial;
+  }
+
   .first {
     display: grid;
     grid-template-columns: 50% 50%;
