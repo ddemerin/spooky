@@ -163,11 +163,6 @@ button {
 }
 
 @media (min-width: 767px) {
-  main {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-
   .top-container {
     max-width: 800px;
     margin-top: 1rem;
@@ -241,13 +236,19 @@ button {
 
   .card {
     margin-bottom: 1.85rem;
-    margin-right: 2rem;
+
     height: 360px;
     width: 47.5vw;
   }
 
   .images {
     display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0;
+  }
+
+  .right {
+    margin-left: 0.9rem;
   }
 
   .first {
